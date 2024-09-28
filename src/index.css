@@ -1,0 +1,171 @@
+/* .card{
+  height: max-content;
+  width: 22rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.4rem;
+  margin-top: 2rem;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+img{
+  width: 96%;
+  height: 20rem;
+  margin-top: 0.5rem;
+  object-fit: cover;
+}
+
+.main{
+  width: 94%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} */
+
+
+
+
+.heading {
+  font-family: 'Poppins', sans-serif;  
+  font-weight: 700;  
+  font-size: 2.5rem; 
+  text-transform: uppercase;  
+  color: #333;  
+  letter-spacing: 2px;  
+  text-align: center;  
+  margin-left: 27.7%; 
+  padding-bottom: 10px;  
+  border-bottom: 3px solid #ff6b6b;  
+  display: inline-block;
+  position: relative;
+}
+
+
+.heading::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 5px;
+  background-color: #ff6b6b;  
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.4s ease;
+}
+
+
+.heading:hover::after {
+  width: 100%;
+}
+
+.heading:hover {
+  color: #ff6b6b; 
+}
+
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(1, 0, 0, 1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin: 20px;
+}
+
+.main{
+  width: 94%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.card-content {
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+ 
+.card-price {
+  font-size: 1rem;
+  color: #ff6b6b;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+
+.card-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.toggle-text {
+  color: #3498db;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.toggle-text:hover {
+  color: #114d75;
+}
+
+.delete-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+} 
